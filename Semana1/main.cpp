@@ -2,14 +2,13 @@
 #include <iostream>
 
 using std::cout;
-
-#define print cout <<
+using std::endl;
 
 int main(int argc, char *argv[]) {
 
     QCoreApplication a(argc, argv);
 
-    print "Hello World!";
+    cout << "Why" <<endl;
 
     return a.exec();
 }
