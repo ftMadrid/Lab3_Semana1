@@ -15,6 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 add_executable(Semana1
   main.cpp
   IFlyable.h
+  vehicle.h vehicle.cpp
 )
 target_link_libraries(Semana1 Qt${QT_VERSION_MAJOR}::Core)
 
