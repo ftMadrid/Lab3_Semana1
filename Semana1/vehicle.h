@@ -2,9 +2,11 @@
 #define VEHICLE_H
 
 #include <algorithm>
+#include <string>
 
 using std::min;
 using std::max;
+using std::string;
 
 class Vehicle
 {
@@ -16,21 +18,21 @@ protected:
 
 public:
 
-    void normalizeFuelLevel();
-
     Vehicle(string name_);
 
-    string getName();
+    string getName() const;
 
-    short getFuelLevel();
+    short getFuelLevel() const;
 
-    virtual short refuel(short units) = 0;
+    virtual void refuel(short units) = 0;
 
-    virtual string status() const = 0;
+    virtual void status() const = 0;
 
     virtual void simulatedHour();
 
-    virtual ~Vehicle() {}
+    virtual void normalizeFuelLevel();
+
+    virtual ~Vehicle();
 
 };
 

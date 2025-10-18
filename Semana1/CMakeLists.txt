@@ -16,6 +16,10 @@ add_executable(Semana1
   main.cpp
   IFlyable.h
   vehicle.h vehicle.cpp
+  car.h car.cpp
+  truck.h truck.cpp
+  drone.h drone.cpp
+  motorcycle.h motorcycle.cpp
 )
 target_link_libraries(Semana1 Qt${QT_VERSION_MAJOR}::Core)
 
