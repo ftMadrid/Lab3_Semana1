@@ -14,11 +14,11 @@ Truck::Truck(string name_) : Vehicle(name_) {}
 
 void Truck::simulatedHour(){
     fuelLevel_ -= 9;
+    this->normalizeFuelLevel();
 }
 
 void Truck::refuel(short units){
     fuelLevel_ += units/2;
-    this->normalizeFuelLevel();
 }
 
 void Truck::status() const{

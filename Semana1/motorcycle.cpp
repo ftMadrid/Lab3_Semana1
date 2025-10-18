@@ -14,11 +14,11 @@ Motorcycle::Motorcycle(string name_) : Vehicle(name_) {}
 
 void Motorcycle::simulatedHour(){
     fuelLevel_ -= 4;
+    this->normalizeFuelLevel();
 }
 
 void Motorcycle::refuel(short units){
     fuelLevel_ += (units*4)/5;
-    this->normalizeFuelLevel();
 }
 
 void Motorcycle::status() const{

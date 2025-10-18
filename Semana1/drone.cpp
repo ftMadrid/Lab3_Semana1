@@ -14,11 +14,11 @@ Drone::Drone(string name_) : Vehicle(name_) {}
 
 void Drone::simulatedHour(){
     fuelLevel_ -= 8;
+    this->normalizeFuelLevel();
 }
 
 void Drone::refuel(short units){
     fuelLevel_ += (units*3)/2;
-    this->normalizeFuelLevel();
 }
 
 void Drone::status() const{
